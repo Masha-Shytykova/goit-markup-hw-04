@@ -68,6 +68,11 @@ img {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   margin-bottom: 50px;
 
@@ -150,8 +155,19 @@ img {
   margin-left: auto;
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
 .contact-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.contact-icon {
+  /* width: 16px;
+  height: 12px; */
+  margin-right: 10px;
 }
 
 .header-contact-link {
@@ -171,15 +187,14 @@ img {
   color: var(--accent-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /*  ============== hero ==============  */
 .section-hero {
   background: #2f303a;
+  background-image: url(../images/backgroundicon/img-hero.jpg);
+  max-width: 1600px;
+  margin: 0 auto;
 }
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -231,6 +246,32 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.advantages-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url('../images/backgroundicon/antenna-1.svg');
+}
+
+.icon-clock::before {
+  background-image: url('../images/backgroundicon/clock-1.svg');
+}
+
+.icon-diagram::before {
+  background-image: url('../images/backgroundicon/diagram-1.svg');
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/backgroundicon/astronaut-1.svg');
 }
 
 .advantages-title {
@@ -297,8 +338,37 @@ img {
 
 .team-text {
   color: var(--secondary-color);
+  margin-bottom: 16px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-item:hover {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
 /*  ================= footer ================  */
 .footer {
   background: #2f303a;
