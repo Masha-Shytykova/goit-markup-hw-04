@@ -48,6 +48,7 @@ img {
 
 .link {
   text-decoration: none;
+  outline: none;
 }
 
 .visually-hidden {
@@ -132,6 +133,7 @@ img {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 
 .nav-link {
@@ -187,6 +189,7 @@ img {
 .header-contact-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+  outline: none;
 }
 
 /*  ============== hero ==============  */
@@ -235,6 +238,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  outline: none;
 
   color: #ffffff;
   background-color: var(--accent-color);
@@ -337,8 +341,7 @@ img {
 }
 
 .team-item-content-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .team-title {
@@ -355,7 +358,6 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .social-item:not(:last-child) {
@@ -385,6 +387,7 @@ img {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
+  outline: none;
 }
 
 /*  ================= our clients ================  */
@@ -415,6 +418,8 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--accent-color);
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 
 /*  ================= footer ================  */
@@ -433,7 +438,7 @@ img {
   margin-right: 70px;
 }
 
-.footer > .container > .logo {
+.footer-wrapper > .logo {
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -478,6 +483,7 @@ img {
 
 .footer .social-link:hover {
   background-color: var(--accent-color);
+  outline: none;
 }
 
 /*  ============== portfolio ================ */
@@ -511,6 +517,7 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 
 .projects {
@@ -534,6 +541,7 @@ img {
 .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .projects-item-content-wrapper {
